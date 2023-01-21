@@ -53,7 +53,7 @@ public class EditDistance {
 /* Basic Strategy
  * Break down into two smaller problems where each character represents unit
  * there are three options (where word1 index is i and word2 index is j):
- * 1) insert (i, j + 1)
- * 2) delete (i + 1, j)
- * 3) replace (i + 1, j + 1)
+ * 1) insert (i, j - 1)
+ * 2) delete (i - 1, j)
+ * 3) replace (i - 1, j - 1)
 */ 
